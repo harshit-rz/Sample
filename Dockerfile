@@ -5,7 +5,7 @@ RUN apt-get -y update && apt-get -y install nginx
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default
 # Copy Source Code
-ADD html/* /usr/share/nginx/html
+ADD ~/Sample/html/* /usr/share/nginx/html
 # Expose the port for access
 EXPOSE 80/tcp
 # Run the Nginx server
